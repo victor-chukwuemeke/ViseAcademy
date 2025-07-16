@@ -4054,16 +4054,18 @@ img.u-pull-left {
 
     .folio-list__item-link {
         padding-left : 0;
+        height: 100%;
     }
 
     .folio-list__item-pic {
         position : static;
+        height: 100%;
     }
 
     .folio-list__item-pic img {
         max-width : 100%;
         width     : 100%;
-        height    : auto;
+        height    : 100%;
     }
 
     .folio-list__item-text,
