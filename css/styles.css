@@ -2969,6 +2969,18 @@ img.u-pull-left {
     max-height: 100%!important;
     object-fit: cover;
 }
+.mobile-home-link .mobile_logo {
+    display: flex;
+    width: 180px;
+   /* height: ; */
+}
+.mobile-home-link .mobile_logo img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%!important;
+    max-height: 100%!important;
+    object-fit: cover;
+}
 
 .mobile-home-link a:focus,
 .mobile-home-link a:hover,
@@ -3110,7 +3122,10 @@ img.u-pull-left {
     }
 
     .header-mobile {
-        display : block;
+        display : flex;
+        align-items: center;
+        /* height: 100%; */
+        width: 100%;
     }
 
     .main-nav-wrap {
@@ -3338,7 +3353,7 @@ img.u-pull-left {
     .intro-content {
         min-height  : 0;
         align-items : flex-start;
-        padding-top : calc(9.6rem + var(--header-height));
+        padding-top : calc(7.6rem + var(--header-height));
     }
 
     .intro-content .text-huge-title {
@@ -3450,6 +3465,13 @@ img.u-pull-left {
     padding-top : calc(6 * var(--space));
 }
 
+@media screen and (max-width: 800px) {
+    .about-expertise {
+        padding-top : calc(3 * var(--space));
+    }
+}
+
+
 .about-expertise .skills-list {
     list-style  : none;
     margin-top  : var(--vspace-1);
@@ -3476,6 +3498,14 @@ img.u-pull-left {
 
 .about-timelines .text-pretitle {
     margin-left : var(--timeline-left-padding);
+}
+
+@media screen and (
+    max-width: 800px
+) {
+    .about-timelines .text-pretitle {
+        margin-left : 0.2rem;
+    }
 }
 
 .timeline {
@@ -3982,8 +4012,8 @@ img.u-pull-left {
 
 @media screen and (max-width: 800px) {
     .s-works {
-        padding-top    : var(--vspace-4);
-        padding-bottom : var(--vspace-3);
+        padding-top    : 0;
+        padding-bottom : 4.5rem;
     }
 }
 
@@ -4059,6 +4089,11 @@ img.u-pull-left {
     border-top  : 1px solid var(--color-border);
 }
 
+.table-responsive {
+    width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 table {
     width: 100%;
     border-radius: 10px;
@@ -4081,6 +4116,10 @@ table {
     font-size: 1.8rem;
     color: #EABE7C;
   
+  }
+
+  .fancy .text_flow {
+    white-space: nowrap;
   }
 
   th {
@@ -4178,7 +4217,7 @@ table {
 
 @media screen and (max-width: 800px) {
     .contact-top {
-        padding-top : var(--vspace-4);
+        padding-top : 4.5rem;
     }
 }
 
